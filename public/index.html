@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment14</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+
+        <header>
+
+            <h1> Assignment 15 : Adding to the JSON</h1>
+
+        </header>
+
+        <main>
+            <div>
+                <h1>Buy or Sell Crafts <img id="add-craft" src="images/plus2.png"> </h1>
+                <div id="add-craft-form" class="modal">
+                    <div class="modal-content">
+                        <span id="form-close" class="close"> &times;</span>
+                        
+                        <form id="submit-craft-form" method="post">
+                            <div class="flex-box">
+                                <div>
+                                    <p id="img-prev-section">
+                                        <img id="img-prev" src="">
+                                    </p>
+                                    
+                                    <p>
+                                        <label for="img" class="styled-upload">Upload Image:</label>
+                                        <input type="file" id="img" name="img" accept="image/*" />
+                                    </p>
+
+                                    
+                                </div>
+    
+                                <div id="right-div">
+                                    <h2>Make Changes to your Craft</h2>
+                                    <p class="more-pad">
+                                        <label for="name ">Craft Name:</label>
+                                        <input type="text" id="name" name="name" required />
+                                    </p>
+    
+                                    <p class="more-pad">
+                                        <label for="description">Description:</label>
+                                        <input type="text" id="description" name="description" required />
+                                    </p>
+
+                                    <p class="more-pad">
+                                        <label>Supplies:</label>
+                                        <a href="#" id="add-supply" class="styled-upload">Add Supply</a>
+                                        <section id="supplies-boxes"></section>
+                                    </p>
+
+                                    <p class="more-pad">
+                                        <button class="styled-upload">Cancel</button>
+                                        <button type="submit" class="styled-upload">Save</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="json-container" class="flex-box"></div>
+
+        </main>
+
+        <footer>
+
+            <p> @TristanHudak.com </p>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
